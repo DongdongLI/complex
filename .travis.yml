@@ -8,7 +8,7 @@ before_install:
 
 script:
     # Run test
-    - docker run lidongdong559/react-test npm test -- --converage
+    - docker run lidongdong559/react-test npm test -- --coverage
 
 after_success:
     - docker build -t lidongdong559/multi-client ./client
